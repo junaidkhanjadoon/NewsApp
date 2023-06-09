@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="2dp"
+    android:padding="10dp"
+    android:elevation="5dp"
+    android:id="@+id/cardView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:padding="10dp"
+    android:maxLines="2"
+    android:text="Main Heading displys here"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:id="@+id/tvMainHeading"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:text="Main news content"
+            android:textSize="18sp"
+            android:id="@+id/tvContent"/>
+       <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:padding="5dp"
+           android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:text="Main news content"
+           android:src="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:id="@+id/ivContent"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:text="By Junaid khan"
+            android:textSize="13sp"
+            android:textColor="@color/purple_700"
+            android:id="@+id/tvAuthor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:text="09:38"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/tvTime"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
